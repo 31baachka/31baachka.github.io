@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@font-face {
+    font-family: Crazy Metro;
+    src: url(Crazy_Metro.otf);
+}
 
 * {
     box-sizing: border-box;
@@ -11,7 +15,7 @@ body {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    font-family: fantasy;
+    font-family: Crazy Metro;
     margin: 0;
     color: black;
 }
