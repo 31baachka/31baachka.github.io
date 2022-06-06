@@ -20,12 +20,6 @@ body {
     color: black;
 }
 
-h1 {
-    font-weight: normal;
-    font-size: 4rem;
-    margin-top: 5rem;
-}
-
 .countdown-container-left {
     display: flex;
     position: absolute;
@@ -51,4 +45,10 @@ h1 {
 
 .countdown-el span {
     font-size: 2vw;
+}
+
+@media screen and (max-width: 800px) {
+body {
+    background-image: url("birthday_m.jpeg");
+}
 }
