@@ -7,7 +7,13 @@
         <link rel="stylesheet" href="style.css" />
         <script src="script.js" defer></script>
     </head>
-    <body>
+    <body onload="loadfun()">
+        <div class="loader" id="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="countdown-container-left">
             <div class="countdown-el days-c">
                 <p class="big-text" id="days">0</p>
@@ -28,5 +34,11 @@
                 <span>seconds</span>
             </div>
         </div>
+        <script>
+            var load = document.getElementById("loading");
+            function loadfun(){
+                load.style.display = 'none';
+            }
+        </script>
     </body>
 </html>
