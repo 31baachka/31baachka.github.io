@@ -9,7 +9,11 @@ function countdown() {
     const dateToCelebrateDate = new Date(dateToCelebrate);
     const currentDate = new Date();
 
-    const totalSeconds = (dateToCelebrateDate - currentDate) / 1000;
+    const totalSeconds = (dateToCelebrateDate - currentDate) / 1000 + 3600 * 24;
+
+    if (totalSeconds < 0) {
+        totalSeconds = 0;
+    }
 
     const days = Math.floor(totalSeconds / 3600 / 24);
     const hours = Math.floor(totalSeconds / 3600) % 24;
@@ -30,3 +34,4 @@ function formatTime(time) {
 countdown();
 
 setInterval(countdown, 1000);
+
