@@ -9,7 +9,7 @@ function countdown() {
     const dateToCelebrateDate = new Date(dateToCelebrate);
     const currentDate = new Date();
 
-    const totalSeconds = (dateToCelebrateDate - currentDate) / 1000;
+    var totalSeconds = (dateToCelebrateDate - currentDate) / 1000;
 
     if (totalSeconds < 0) {
         totalSeconds = 1891281;
